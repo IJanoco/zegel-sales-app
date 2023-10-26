@@ -46,7 +46,38 @@ function App() {
 
       </div>
 
- 
+      <div className="mi_formulario__form">
+
+      <label className="mi_formulario__label">Código: </label>
+
+      <div className="mi_formulario__input-icon">
+
+        <i className="fa fa-user mi_formulario__icon" aria-hidden="true" />
+
+        <input id="nombre" name="nombre" type="text" className="mi_formulario__input" placeholder="0000001" disabled/>
+        
+      </div>
+
+      </div>
+
+      <br/>
+
+      <div className="mi_formulario__form">
+
+      <label className="mi_formulario__label">Tipo de Comprobante: </label>
+
+      <div className="mi_formulario__input-icon">
+
+        <i className="fa fa-user mi_formulario__icon" aria-hidden="true" />
+
+        <input id="nombre" name="nombre" type="text" className="mi_formulario__input" placeholder="Boleta" disabled/>
+        
+      </div>
+
+      </div>
+
+      <br/>
+
 
       <div className="mi_formulario__body">
 
@@ -82,7 +113,7 @@ function App() {
 
             )}
 
- 
+
 
             {numberError == 2 && (
 
@@ -108,6 +139,56 @@ function App() {
 
           </div>
 
+          <br/>
+
+          <div className="mi_formulario__form">
+
+          <label className="mi_formulario__label">Apellidos: </label>
+
+          <div className="mi_formulario__input-icon">
+
+            <i className="fa fa-user mi_formulario__icon" aria-hidden="true" />
+
+            <input id="nombre" name="nombre" className="mi_formulario__input"/>
+
+          </div>
+       
+          </div>
+
+          <br/>
+
+          <div className="mi_formulario__form">
+
+          <label className="mi_formulario__label">Fecha de compra: </label>
+
+          <div className="mi_formulario__input-icon">
+
+            <i className="fa fa-user mi_formulario__icon" aria-hidden="true" />
+
+            <input id="nombre" name="nombre" type="date" className="mi_formulario__input"/>
+            
+          </div>
+
+          <br/>
+
+          </div>
+
+          <div className="mi_formulario__form">
+
+          <label className="mi_formulario__label">Fecha de vencimiento: </label>
+
+          <div className="mi_formulario__input-icon">
+
+            <i className="fa fa-user mi_formulario__icon" aria-hidden="true" />
+
+            <input id="nombre" name="nombre" type="date" className="mi_formulario__input"/>
+            
+          </div>
+
+          </div>
+
+          <br/>
+
           <button disabled={numberError>0} onClick={saveClick} className="mi_formulario__button">
 
             Guardar
@@ -118,21 +199,8 @@ function App() {
 
       </div>
 
- 
+      <br/>        
 
-      <div className="mi_formulario__footer">
-
-        <div className="mi_formulario__group">
-
-          <span className="mi_formulario__label">
-
-            Este es mi primer formulario con CSS
-
-          </span>
-
-        </div>
-
-      </div>
 
     </div>
 
